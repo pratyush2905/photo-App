@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
+import React, { useContext } from 'react';
+import Header from '../src/components/Header';
+import AnimRoutes from '../src/components/AnimRoutes';
+import { BrowserRouter as Router } from 'react-router-dom';
+import {motion} from 'framer-motion';
+import {CursorContext} from './context/CursorContext';
+const App = () => {
+  const {cursorVariants,cursorBg} = useContext(CursorContext);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+  <>
+  <Router>
+    <Header />
+    <AnimRoutes />
+  </Router>
+  {/* CURSOR */}
+    <motion.div
+    variants={cursorVariants}
+    animate={cursorBg}
+    className='w-[32px] h-[32px] bg-primary fixed top-0 left-0 pointer-events-none z-50 rounded-full'></motion.div>
+
+  </>
   );
-}
+};
 
 export default App;
