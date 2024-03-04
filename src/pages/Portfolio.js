@@ -1,8 +1,8 @@
 import React, { useContext } from 'react';
-import Image1 from '../img/portfolio/1a.jpg';
-import Image2 from '../img/portfolio/2a.jpg';
-import Image3 from '../img/portfolio/3a.jpg';
-import Image4 from '../img/portfolio/4a.jpg';
+import Image1 from '../img/portfolio/1.png';
+import Image2 from '../img/portfolio/2.png';
+import Image3 from '../img/portfolio/3.png';
+import Image4 from '../img/portfolio/4.png';
 
 import { Link } from 'react-router-dom';
 
