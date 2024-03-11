@@ -39,7 +39,7 @@ const Contact = () => {
             </div>
             <input
               className='outline-none border-b border-b-primary h-[60px] bg-transparent font-secondary w-full pl-3 placeholder:text-[#757879]'
-              type="text" placeholder='Your Name' />
+              type="text" placeholder='Your Message Here' />
             <button className='btn mb-[30px] mx-auto lg:mx-0 self-start'>Send It</button>
           </form>
         </div>
